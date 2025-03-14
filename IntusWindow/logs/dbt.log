@@ -1,0 +1,295 @@
+[0m22:40:04.556064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10347d550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042ebb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042ebd90>]}
+
+
+============================== 22:40:04.559644 | 10ef36a2-9186-43fa-b667-433860480253 ==============================
+[0m22:40:04.559644 [info ] [MainThread]: Running with dbt=1.9.3
+[0m22:40:04.560176 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/Users/diptu/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:40:11.375755 [debug] [MainThread]: Starter project path: /Users/diptu/IntusWindow/venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m22:40:11.387414 [info ] [MainThread]: 
+Your new dbt project "task" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:40:11.388077 [info ] [MainThread]: Setting up your profile.
+[0m22:40:17.064430 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m22:40:17.065022 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m22:41:04.104694 [info ] [MainThread]: Profile task written to /Users/diptu/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:41:04.112653 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 59.595535, "process_in_blocks": "0", "process_kernel_time": 0.219684, "process_mem_max_rss": "94830592", "process_out_blocks": "0", "process_user_time": 0.844056}
+[0m22:41:04.114317 [debug] [MainThread]: Command `dbt init` succeeded at 22:41:04.114106 after 59.60 seconds
+[0m22:41:04.115326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10499be10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049afe30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10489f020>]}
+[0m22:41:04.115901 [debug] [MainThread]: Flushing usage events
+[0m22:41:06.404558 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:41:17.199203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1032c1550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10412fb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10412fd90>]}
+
+
+============================== 22:41:17.202200 | 43afcfc9-0c7f-42e8-9947-ded2fdbf1d91 ==============================
+[0m22:41:17.202200 [info ] [MainThread]: Running with dbt=1.9.3
+[0m22:41:17.202535 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/diptu/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:41:17.211143 [info ] [MainThread]: dbt version: 1.9.3
+[0m22:41:17.211396 [info ] [MainThread]: python version: 3.13.1
+[0m22:41:17.211539 [info ] [MainThread]: python path: /Users/diptu/IntusWindow/venv/bin/python3.13
+[0m22:41:17.211662 [info ] [MainThread]: os info: macOS-15.3.1-arm64-arm-64bit-Mach-O
+[0m22:41:17.298756 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m22:41:17.299057 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m22:41:17.344225 [info ] [MainThread]: Using profiles dir at /Users/diptu/.dbt
+[0m22:41:17.344463 [info ] [MainThread]: Using profiles.yml file at /Users/diptu/.dbt/profiles.yml
+[0m22:41:17.344606 [info ] [MainThread]: Using dbt_project.yml file at /Users/diptu/IntusWindow/dbt_project.yml
+[0m22:41:17.345123 [info ] [MainThread]: adapter type: redshift
+[0m22:41:17.345295 [info ] [MainThread]: adapter version: 1.9.2
+[0m22:41:17.345441 [info ] [MainThread]: Configuration:
+[0m22:41:17.345565 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:41:17.345679 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:41:17.345795 [info ] [MainThread]: Required dependencies:
+[0m22:41:17.345953 [debug] [MainThread]: Executing "git --help"
+[0m22:41:17.383910 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:41:17.384494 [debug] [MainThread]: STDERR: "b''"
+[0m22:41:17.384684 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:41:17.384854 [info ] [MainThread]: Connection:
+[0m22:41:17.385026 [info ] [MainThread]:   host: technical-task.405894846250.eu-north-1.redshift-serverless.amazonaws.com
+[0m22:41:17.385173 [info ] [MainThread]:   user: nad
+[0m22:41:17.385287 [info ] [MainThread]:   port: 5439
+[0m22:41:17.385405 [info ] [MainThread]:   database: demo
+[0m22:41:17.385521 [info ] [MainThread]:   method: database
+[0m22:41:17.385630 [info ] [MainThread]:   cluster_id: None
+[0m22:41:17.385738 [info ] [MainThread]:   iam_profile: None
+[0m22:41:17.385848 [info ] [MainThread]:   schema: dev
+[0m22:41:17.385954 [info ] [MainThread]:   sslmode: prefer
+[0m22:41:17.386059 [info ] [MainThread]:   region: None
+[0m22:41:17.386165 [info ] [MainThread]:   sslmode: prefer
+[0m22:41:17.386268 [info ] [MainThread]:   region: None
+[0m22:41:17.386374 [info ] [MainThread]:   autocreate: False
+[0m22:41:17.386478 [info ] [MainThread]:   db_groups: []
+[0m22:41:17.386580 [info ] [MainThread]:   ra3_node: False
+[0m22:41:17.386683 [info ] [MainThread]:   connect_timeout: None
+[0m22:41:17.386786 [info ] [MainThread]:   role: None
+[0m22:41:17.386889 [info ] [MainThread]:   retries: 1
+[0m22:41:17.386991 [info ] [MainThread]:   autocommit: True
+[0m22:41:17.387093 [info ] [MainThread]:   access_key_id: None
+[0m22:41:17.387197 [info ] [MainThread]:   is_serverless: None
+[0m22:41:17.387543 [info ] [MainThread]: Registered adapter: redshift=1.9.2
+[0m22:41:17.439734 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m22:41:17.442594 [debug] [MainThread]: Using redshift connection "debug"
+[0m22:41:17.442767 [debug] [MainThread]: On debug: select 1 as id
+[0m22:41:17.442910 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:41:17.443075 [debug] [MainThread]: Redshift adapter: Connecting to Redshift with 'database' credentials method
+[0m22:41:17.445341 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m22:41:20.691320 [debug] [MainThread]: SQL status: SUCCESS in 3.248 seconds
+[0m22:41:20.733794 [debug] [MainThread]: On debug: Close
+[0m22:41:20.734224 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:41:20.734425 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:41:20.734578 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/diptu/IntusWindow/dbt_project.yml> not found
+
+[0m22:41:20.736109 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 3.5752158, "process_in_blocks": "0", "process_kernel_time": 0.200621, "process_mem_max_rss": "108281856", "process_out_blocks": "0", "process_user_time": 0.756649}
+[0m22:41:20.736382 [debug] [MainThread]: Command `dbt debug` failed at 22:41:20.736314 after 3.58 seconds
+[0m22:41:20.736568 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:41:20.736755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048c3950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10547d910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046e3680>]}
+[0m22:41:20.736996 [debug] [MainThread]: Flushing usage events
+[0m22:41:21.741835 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:42:08.988367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105081550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105eefb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105eefd90>]}
+
+
+============================== 22:42:08.992100 | 4d59dcdf-c077-430a-a6fd-743a4d23b388 ==============================
+[0m22:42:08.992100 [info ] [MainThread]: Running with dbt=1.9.3
+[0m22:42:08.992426 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/diptu/.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:42:12.321573 [info ] [MainThread]: A project called task already exists here.
+[0m22:42:12.325768 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 3.377413, "process_in_blocks": "0", "process_kernel_time": 0.117038, "process_mem_max_rss": "94879744", "process_out_blocks": "0", "process_user_time": 0.592781}
+[0m22:42:12.326581 [debug] [MainThread]: Command `dbt init` succeeded at 22:42:12.326424 after 3.38 seconds
+[0m22:42:12.327111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f168b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f970b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d5f130>]}
+[0m22:42:12.327965 [debug] [MainThread]: Flushing usage events
+[0m22:42:13.373769 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:42:19.128062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110541550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b17b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b17d90>]}
+
+
+============================== 22:42:19.130787 | 6df66fb9-a198-4ac6-9965-d0e9350fb4f3 ==============================
+[0m22:42:19.130787 [info ] [MainThread]: Running with dbt=1.9.3
+[0m22:42:19.131097 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/diptu/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:42:19.138115 [info ] [MainThread]: dbt version: 1.9.3
+[0m22:42:19.138329 [info ] [MainThread]: python version: 3.13.1
+[0m22:42:19.138490 [info ] [MainThread]: python path: /Users/diptu/IntusWindow/venv/bin/python3.13
+[0m22:42:19.138660 [info ] [MainThread]: os info: macOS-15.3.1-arm64-arm-64bit-Mach-O
+[0m22:42:19.219031 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m22:42:19.219308 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m22:42:19.269529 [info ] [MainThread]: Using profiles dir at /Users/diptu/.dbt
+[0m22:42:19.269775 [info ] [MainThread]: Using profiles.yml file at /Users/diptu/.dbt/profiles.yml
+[0m22:42:19.269919 [info ] [MainThread]: Using dbt_project.yml file at /Users/diptu/IntusWindow/dbt_project.yml
+[0m22:42:19.270212 [info ] [MainThread]: adapter type: redshift
+[0m22:42:19.270381 [info ] [MainThread]: adapter version: 1.9.2
+[0m22:42:19.270525 [info ] [MainThread]: Configuration:
+[0m22:42:19.270648 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:42:19.270774 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:42:19.270888 [info ] [MainThread]: Required dependencies:
+[0m22:42:19.271036 [debug] [MainThread]: Executing "git --help"
+[0m22:42:19.294013 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:42:19.294658 [debug] [MainThread]: STDERR: "b''"
+[0m22:42:19.294860 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:42:19.295037 [info ] [MainThread]: Connection:
+[0m22:42:19.295208 [info ] [MainThread]:   host: technical-task.405894846250.eu-north-1.redshift-serverless.amazonaws.com
+[0m22:42:19.295333 [info ] [MainThread]:   user: nad
+[0m22:42:19.295447 [info ] [MainThread]:   port: 5439
+[0m22:42:19.295560 [info ] [MainThread]:   database: demo
+[0m22:42:19.295678 [info ] [MainThread]:   method: database
+[0m22:42:19.295788 [info ] [MainThread]:   cluster_id: None
+[0m22:42:19.295898 [info ] [MainThread]:   iam_profile: None
+[0m22:42:19.296003 [info ] [MainThread]:   schema: dev
+[0m22:42:19.296109 [info ] [MainThread]:   sslmode: prefer
+[0m22:42:19.296219 [info ] [MainThread]:   region: None
+[0m22:42:19.296324 [info ] [MainThread]:   sslmode: prefer
+[0m22:42:19.296427 [info ] [MainThread]:   region: None
+[0m22:42:19.296535 [info ] [MainThread]:   autocreate: False
+[0m22:42:19.296638 [info ] [MainThread]:   db_groups: []
+[0m22:42:19.296743 [info ] [MainThread]:   ra3_node: False
+[0m22:42:19.296846 [info ] [MainThread]:   connect_timeout: None
+[0m22:42:19.296948 [info ] [MainThread]:   role: None
+[0m22:42:19.297054 [info ] [MainThread]:   retries: 1
+[0m22:42:19.297158 [info ] [MainThread]:   autocommit: True
+[0m22:42:19.297259 [info ] [MainThread]:   access_key_id: None
+[0m22:42:19.297363 [info ] [MainThread]:   is_serverless: None
+[0m22:42:19.297700 [info ] [MainThread]: Registered adapter: redshift=1.9.2
+[0m22:42:19.346406 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m22:42:19.349211 [debug] [MainThread]: Using redshift connection "debug"
+[0m22:42:19.349369 [debug] [MainThread]: On debug: select 1 as id
+[0m22:42:19.349505 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:42:19.349660 [debug] [MainThread]: Redshift adapter: Connecting to Redshift with 'database' credentials method
+[0m22:42:19.351861 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m22:42:22.400900 [debug] [MainThread]: SQL status: SUCCESS in 3.051 seconds
+[0m22:42:22.460217 [debug] [MainThread]: On debug: Close
+[0m22:42:22.460852 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:42:22.461164 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:42:22.461384 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/diptu/IntusWindow/dbt_project.yml> not found
+
+[0m22:42:22.462948 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 3.3687472, "process_in_blocks": "0", "process_kernel_time": 0.167325, "process_mem_max_rss": "111411200", "process_out_blocks": "0", "process_user_time": 0.756915}
+[0m22:42:22.463360 [debug] [MainThread]: Command `dbt debug` failed at 22:42:22.463238 after 3.37 seconds
+[0m22:42:22.463669 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:42:22.463917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1124af950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114211910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1122cf680>]}
+[0m22:42:22.464226 [debug] [MainThread]: Flushing usage events
+[0m22:42:23.721107 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:42:47.758603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bb1550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a1fb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a1fd90>]}
+
+
+============================== 22:42:47.761590 | a08edeb2-1bec-4efe-8a38-004fbce9374b ==============================
+[0m22:42:47.761590 [info ] [MainThread]: Running with dbt=1.9.3
+[0m22:42:47.761913 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/diptu/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/diptu/IntusWindow/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:42:47.769696 [info ] [MainThread]: dbt version: 1.9.3
+[0m22:42:47.770019 [info ] [MainThread]: python version: 3.13.1
+[0m22:42:47.770262 [info ] [MainThread]: python path: /Users/diptu/IntusWindow/venv/bin/python3.13
+[0m22:42:47.770431 [info ] [MainThread]: os info: macOS-15.3.1-arm64-arm-64bit-Mach-O
+[0m22:42:47.847087 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m22:42:47.847399 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m22:42:47.890358 [info ] [MainThread]: Using profiles dir at /Users/diptu/.dbt
+[0m22:42:47.890601 [info ] [MainThread]: Using profiles.yml file at /Users/diptu/.dbt/profiles.yml
+[0m22:42:47.890759 [info ] [MainThread]: Using dbt_project.yml file at /Users/diptu/IntusWindow/dbt_project.yml
+[0m22:42:47.891020 [info ] [MainThread]: adapter type: redshift
+[0m22:42:47.891146 [info ] [MainThread]: adapter version: 1.9.2
+[0m22:42:47.933910 [info ] [MainThread]: Configuration:
+[0m22:42:47.934188 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:42:47.934327 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:42:47.934445 [info ] [MainThread]: Required dependencies:
+[0m22:42:47.934628 [debug] [MainThread]: Executing "git --help"
+[0m22:42:47.950342 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:42:47.950925 [debug] [MainThread]: STDERR: "b''"
+[0m22:42:47.951107 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:42:47.951269 [info ] [MainThread]: Connection:
+[0m22:42:47.951451 [info ] [MainThread]:   host: technical-task.405894846250.eu-north-1.redshift-serverless.amazonaws.com
+[0m22:42:47.951574 [info ] [MainThread]:   user: nad
+[0m22:42:47.951688 [info ] [MainThread]:   port: 5439
+[0m22:42:47.951800 [info ] [MainThread]:   database: demo
+[0m22:42:47.951920 [info ] [MainThread]:   method: database
+[0m22:42:47.952033 [info ] [MainThread]:   cluster_id: None
+[0m22:42:47.952145 [info ] [MainThread]:   iam_profile: None
+[0m22:42:47.952261 [info ] [MainThread]:   schema: dev
+[0m22:42:47.952374 [info ] [MainThread]:   sslmode: prefer
+[0m22:42:47.952482 [info ] [MainThread]:   region: None
+[0m22:42:47.952592 [info ] [MainThread]:   sslmode: prefer
+[0m22:42:47.952698 [info ] [MainThread]:   region: None
+[0m22:42:47.952814 [info ] [MainThread]:   autocreate: False
+[0m22:42:47.952923 [info ] [MainThread]:   db_groups: []
+[0m22:42:47.953038 [info ] [MainThread]:   ra3_node: False
+[0m22:42:47.953146 [info ] [MainThread]:   connect_timeout: None
+[0m22:42:47.953269 [info ] [MainThread]:   role: None
+[0m22:42:47.953378 [info ] [MainThread]:   retries: 1
+[0m22:42:47.953486 [info ] [MainThread]:   autocommit: True
+[0m22:42:47.953592 [info ] [MainThread]:   access_key_id: None
+[0m22:42:47.953696 [info ] [MainThread]:   is_serverless: None
+[0m22:42:47.954035 [info ] [MainThread]: Registered adapter: redshift=1.9.2
+[0m22:42:47.999944 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m22:42:48.003153 [debug] [MainThread]: Using redshift connection "debug"
+[0m22:42:48.003322 [debug] [MainThread]: On debug: select 1 as id
+[0m22:42:48.003459 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:42:48.003618 [debug] [MainThread]: Redshift adapter: Connecting to Redshift with 'database' credentials method
+[0m22:42:48.005904 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m22:42:51.067986 [debug] [MainThread]: SQL status: SUCCESS in 3.064 seconds
+[0m22:42:51.112206 [debug] [MainThread]: On debug: Close
+[0m22:42:51.112909 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:42:51.113209 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:42:51.115746 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 3.3945074, "process_in_blocks": "0", "process_kernel_time": 0.181373, "process_mem_max_rss": "113115136", "process_out_blocks": "0", "process_user_time": 0.795723}
+[0m22:42:51.116180 [debug] [MainThread]: Command `dbt debug` succeeded at 22:42:51.116076 after 3.40 seconds
+[0m22:42:51.116470 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:42:51.116783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076335c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ec04d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fd3130>]}
+[0m22:42:51.117145 [debug] [MainThread]: Flushing usage events
+[0m22:42:52.063417 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:01:03.061923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102fb9550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103e2bb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103e2bd90>]}
+
+
+============================== 23:01:03.064876 | 860f4492-c8fb-4422-a0f2-5e7f6b1036d9 ==============================
+[0m23:01:03.064876 [info ] [MainThread]: Running with dbt=1.9.3
+[0m23:01:03.065185 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/diptu/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/diptu/IntusWindow/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m23:01:03.157881 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m23:01:03.158214 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m23:01:03.258030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '860f4492-c8fb-4422-a0f2-5e7f6b1036d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a20d60>]}
+[0m23:01:03.284550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '860f4492-c8fb-4422-a0f2-5e7f6b1036d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104462f10>]}
+[0m23:01:03.285215 [info ] [MainThread]: Registered adapter: redshift=1.9.2
+[0m23:01:03.337490 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m23:01:03.337986 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:01:03.338177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '860f4492-c8fb-4422-a0f2-5e7f6b1036d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104559050>]}
+[0m23:01:03.741076 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.task.example
+[0m23:01:03.743579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '860f4492-c8fb-4422-a0f2-5e7f6b1036d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103938e60>]}
+[0m23:01:03.764572 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/diptu/IntusWindow/target/manifest.json
+[0m23:01:03.766066 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/diptu/IntusWindow/target/semantic_manifest.json
+[0m23:01:03.771536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '860f4492-c8fb-4422-a0f2-5e7f6b1036d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10515cf30>]}
+[0m23:01:03.771792 [info ] [MainThread]: Found 502 macros
+[0m23:01:03.771946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '860f4492-c8fb-4422-a0f2-5e7f6b1036d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10512f5f0>]}
+[0m23:01:03.772593 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:01:03.772833 [debug] [MainThread]: Command end result
+[0m23:01:03.783388 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/diptu/IntusWindow/target/manifest.json
+[0m23:01:03.784244 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/diptu/IntusWindow/target/semantic_manifest.json
+[0m23:01:03.785835 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/diptu/IntusWindow/target/run_results.json
+[0m23:01:03.787237 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.763386, "process_in_blocks": "0", "process_kernel_time": 0.184706, "process_mem_max_rss": "117243904", "process_out_blocks": "0", "process_user_time": 1.18309}
+[0m23:01:03.787437 [debug] [MainThread]: Command `dbt run` succeeded at 23:01:03.787395 after 0.76 seconds
+[0m23:01:03.787629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103cae810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bd1bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bd3e30>]}
+[0m23:01:03.787791 [debug] [MainThread]: Flushing usage events
+[0m23:01:04.945580 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:26:00.398355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1036e9550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b1fd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b1fb10>]}
+
+
+============================== 01:26:00.402055 | ed044d5a-30a1-4247-b91e-26b01eae8df5 ==============================
+[0m01:26:00.402055 [info ] [MainThread]: Running with dbt=1.9.3
+[0m01:26:00.402781 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/diptu/.dbt', 'log_path': '/Users/diptu/IntusWindow/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt ', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:26:00.481248 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ed044d5a-30a1-4247-b91e-26b01eae8df5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103d249d0>]}
+[0m01:26:00.490474 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m01:26:00.490964 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m01:26:00.492228 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.14063616, "process_in_blocks": "0", "process_kernel_time": 0.13284, "process_mem_max_rss": "95223808", "process_out_blocks": "0", "process_user_time": 0.851493}
+[0m01:26:00.492493 [debug] [MainThread]: Command `cli deps` succeeded at 01:26:00.492432 after 0.14 seconds
+[0m01:26:00.492687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104987240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d348d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d64050>]}
+[0m01:26:00.492860 [debug] [MainThread]: Flushing usage events
+[0m01:26:01.552360 [debug] [MainThread]: An error was encountered while trying to flush usage events
