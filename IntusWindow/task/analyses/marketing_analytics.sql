@@ -8,7 +8,7 @@ Definition: Event Conversion Rate is calculated as the number of sales transacti
 
 won't materialize in data warehouse
 */
-
+{{ config(materialized='ephemeral') }}
 
 WITH marketing_data AS (
     SELECT 

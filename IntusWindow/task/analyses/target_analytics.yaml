@@ -1,0 +1,77 @@
+version: 2
+models:
+  - name: target_analytics
+    description: |-
+      This analysis model calculates key marketing performance metrics, including Cost per Acquisition (CPA), Return on Marketing Investment (ROMI), and Event Conversion Rate.
+                  It aggregates data from marketing events and sales transactions to provide insights into marketing effectiveness.
+
+                  **Important Notes:**
+
+                  - This model is configured to be an `ephemeral` model, meaning it won't materialize as a physical table in the data warehouse.
+
+    columns:
+      - name: transaction_year
+        description: "The year of the transaction."
+        tests:
+          - not_null
+
+      - name: transaction_month
+        description: "The month of the transaction."
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+      - name: category
+        description: "The product category."
+        tests:
+          - not_null
+
+      - name: target_revenue
+        description: "The target revenue for the given year, month, and category."
+        tests:
+          - not_null
+          - positive_value
+
+      - name: actual_revenue
+        description: "The actual revenue achieved for the given year, month, and category."
+        tests:
+          - not_null
+          - positive_value
+
+      - name: target_achievement_status
+        description: "Indicates whether the target revenue was achieved ('Achieved' or 'Not Achieved')."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Achieved', 'Not Achieved']
+
+seeds:
+  - name: sales_target
+    description: >
+      This seed file contains monthly target revenue goals for each product category.
+      It includes columns for transaction year, transaction month, category, and target revenue.
+
+    columns:
+      - name: transaction_year
+        description: "The year for which the target revenue is set."
+        tests:
+          - not_null
+
+      - name: transaction_month
+        description: "The month for which the target revenue is set."
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+      - name: category
+        description: "The product category for which the target revenue is set."
+        tests:
+          - not_null
+
+      - name: target_revenue
+        description: "The target revenue amount."
+        tests:
+          - not_null
+          - is_positive

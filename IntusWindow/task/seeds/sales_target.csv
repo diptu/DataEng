@@ -5,9 +5,9 @@ transaction_year,transaction_month,category,target_revenue
 2023,2,Clothing,60000
 2023,3,Electronics,110000
 2023,3,Clothing,55000
-2023,4,Electronics,130000
-2023,4,Clothing,65000
+2023,10,Electronics,130000
+2023,10,Clothing,500
 2024,1,Electronics,140000
-2024,1,Clothing,70000
+2024,10,Clothing,70000
 2024,2,Electronics,150000
 2024,2,Clothing,75000

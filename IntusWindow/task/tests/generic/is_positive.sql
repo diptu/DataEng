@@ -1,3 +1,11 @@
+/*
+This generic test checks if a specified numeric column in a model contains only positive values (values greater than 0).
+
+      **Purpose:**
+
+      The `is_positive` test is used to ensure data quality by verifying that a column, which is expected to hold positive numbers, does not contain any zero or negative values. This is useful for columns representing metrics like revenue, counts, or other quantities that should naturally be positive.
+
+*/
 
 {% test is_positive(model, column_name) %}
 

@@ -1,0 +1,30 @@
+version: 1
+
+models:
+  - name: monthly_marketing_costs
+    description: "Aggregated marketing costs by year, month, and day."
+    config:
+      materialized: table
+    columns:
+      - name: event_year
+        description: "The year of the marketing event."
+        tests:
+          - not_null
+      - name: event_month
+        description: "The month of the marketing event."
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      - name: event_day
+        description: "The day of the marketing event."
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+      - name: monthly_marketing_cost
+        description: "The total marketing cost for the year, month and day."
+        tests:
+          - not_null
+          - is_positive:  # Using the is_positive test for total_revenue
+              description: "Validates that marketing cost is positive, ensuring that cost values are greater than zero."

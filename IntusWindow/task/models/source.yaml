@@ -87,3 +87,13 @@ sources:
 
       - name: daily_sales_negetive_revenue
         description: "Daily sales with negetive revenue"
+      - name: marketing_analytics
+        description: >
+          This analysis model calculates key marketing performance metrics, including Cost per Acquisition (CPA), Return on Marketing Investment (ROMI), and Event Conversion Rate.
+          It aggregates data from marketing events and sales transactions to provide insights into marketing effectiveness.
+
+          **Important Notes:**
+
+          - This model is configured to be an `ephemeral` model, meaning it won't materialize as a physical table in the data warehouse.
+          - It's intended for analysis and reporting purposes, providing real-time calculations based on the underlying staging models.
+
