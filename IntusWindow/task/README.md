@@ -37,6 +37,7 @@ This document outlines the steps to generate and view dbt project documentation 
     * In your terminal, run the following command:
 
     ```bash
+    cd task
     dbt docs generate
     ```
 
